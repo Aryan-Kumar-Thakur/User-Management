@@ -1,0 +1,71 @@
+.productCard {
+    width: 16vmax;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5vmax;
+    padding-bottom: 0.5vmax;
+    border: 0.2px solid #000;
+}
+
+.productCard>img {
+    width: 16vmax;
+    height: 25vh;
+}
+
+
+.productCard>p {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 1vmax;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.editbtn{
+    margin-left: 1rem;
+    border: 0.1rem solid #000;
+    color: #000;
+}
+
+.delbtn{
+    margin-right: 1rem;
+    border: 0.1rem solid #000;
+    color: #000;
+    cursor: pointer;
+}
+.productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+    transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 800px) {
+    .banner{
+        background: url('../../images/cover.jfif') left center/100% 100% no-repeat;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .productCard>img {
+        height: 15vh;
+    }
+    
+    .productCard>p {
+        font-size: 1.7vmax;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .productCard>img {
+        height: 15vh;
+    }
+}

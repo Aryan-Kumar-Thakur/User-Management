@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    min-height: 40px;
+    margin: 0px 0px auto;
+    letter-spacing: 0.5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: 0px;
+    text-align: center;
+    background-color: rgb(110, 107, 107);
+  }
+
+  .title{
+    color: skyblue;
+    margin-left: 100px;
+  }
+
+  .headerbtn{
+    margin-right: 7vmax;
+    width: 100px;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: skyblue;
+  }
+
+  @media screen and (max-width: 600px) {
+  
+    header{
+        flex-direction: column;
+        min-height: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        margin-left: -50px;
+    }
+  }
